@@ -1,0 +1,159 @@
+/* Global Styles */
+body {
+    background-color: #4B0082; /* Morado oscuro */
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.logo img {
+    max-width: 500px;
+}
+
+.title {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.title h1 {
+    color: #10eee4;
+    font-size: 3em;
+    margin: 0;
+}
+
+.title h3 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+/* Navigation Menu */
+nav {
+    background-color: #10eee4;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    padding: 10px;
+    background-color: rgba(255, 0, 140, 0.863);
+    border-radius: 5px;
+}
+
+.nav-menu li a:hover {
+    background-color: #777;
+}
+
+/* Main Section with Images */
+.image-gallery {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el contenido */
+    padding: 100px;
+    
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 90%;
+    height: 450px;
+    margin-right: 20px; /* Espacio entre la imagen y el cuadro de texto */
+}
+
+.text-box {
+    background-color: white; /* Fondo blanco para el cuadro de texto */
+    color: black; /* Texto negro para contraste */
+    padding: 60px;
+    border-radius: 40px; /* Bordes redondeados */
+    max-width: 400px; /* Ancho máximo del cuadro de texto */
+    text-align: justify;
+    
+}
+
+.text-box h2 {
+    margin-top: 0; /* Elimina margen superior */
+    
+}
+
+.text-box p {
+    margin-bottom: 0; /* Elimina margen inferior */
+}
+
+/* Marquee and Form Section */
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    background: black;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+.marquee-content {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 20s linear infinite;
+}
+
+.marquee-content img {
+    height: 100px;
+    margin: 0 15px;
+    vertical-align: middle;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.form-container {
+    width: 50%;
+    align-items: center;
+  
+}
+.form-container {
+    padding: 20px;
+    text-align: justify;
+}
+
+.form-container h2 {
+    margin-top: 0;
+    text-align: justify;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
